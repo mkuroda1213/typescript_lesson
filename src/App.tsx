@@ -1,4 +1,7 @@
 import React from "react";
+import Data from "./data.json";
+
+type USERS = typeof Data;
 
 const name = "hello";
 
