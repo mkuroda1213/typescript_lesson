@@ -1,5 +1,6 @@
 import React from "react";
 import Data from "./data.json";
+import TestComponent from "./TestComponent";
 
 type USERS = typeof Data;
 
@@ -164,6 +165,13 @@ const funcGen4 = <T extends Props>(props: T) => {
   return { value: props.price };
 };
 
-export default function App() {
-  return <div className="App"></div>;
-}
+const App: React.FC = () => {
+  return (
+    <div className="App">
+      <header className="App-header"></header>
+      <TestComponent text="hello from App" />
+    </div>
+  );
+};
+
+export default App;
